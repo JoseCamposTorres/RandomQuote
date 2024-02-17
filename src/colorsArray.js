@@ -60,7 +60,6 @@ const COLORS_ARRAY = [
     '#651FFF',
     '#6200EA',
     '#3F51B5',
-    '#E8EAF6',
     '#C5CAE9',
     '#9FA8DA',
     '#7986CB',
@@ -273,7 +272,7 @@ const COLORS_ARRAY = [
     '#37474F',
     '#263238',
     '#000000',
-    
+
 ];
 
 export default COLORS_ARRAY

@@ -42,23 +42,22 @@ function App() {
   return (
     <div className="App">
       <div className="App-header" style={{ backgroundColor: accentColor }}>
-        <div id='quote-box' style={{ color: accentColor }}>
-
+        <div id='quote-box' style={{ color: accentColor, maxWidth: '540px', margin: '0 auto' }}>
           <p id='text'>
-            <i class="fa fa-quote-left"> </i> {quote}"
+            <i className="fa fa-quote-left"> </i> {quote}"
           </p>
           <p id='author'>
             - {author}
           </p>
-          
+
           <div className='buttons'>
-            <a target='_blank' id='tweet-quote' style={{ backgroundColor: accentColor }} href={encodeURI(`https://twitter.com/intent/tweet?text=${quote} - ${author}`)} > <i class="fab fa-twitter"></i></a>
+            <a target='_blank' id='tweet-quote' style={{ backgroundColor: accentColor }} href={encodeURI(`https://twitter.com/intent/tweet?text=${quote} - ${author}`)} > <i className="fab fa-twitter"></i></a>
             <button id='new-quote' style={{ backgroundColor: accentColor }} onClick={() => getRandomQuote()}>New Quote</button>
           </div>
-        
-       
-
         </div>
+        <span style={{ fontSize: '16px' }}>
+          &copy;2024 Jose Campos <i className="fab fa-react" style={{ margin: '0 5px', fontSize: '20px' }}></i> | All Rights Reserved | StarCode
+        </span>
       </div>
     </div>
   );
